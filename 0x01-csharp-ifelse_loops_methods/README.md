@@ -1,0 +1,1 @@
+Some C# basic logic warm up to get used to the language

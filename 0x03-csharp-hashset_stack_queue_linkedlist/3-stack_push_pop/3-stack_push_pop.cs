@@ -8,7 +8,7 @@ class MyStack
     {
         Console.WriteLine($"Number of items: {aStack.Count}");
         Console.WriteLine($"Top item: {aStack.Peek()}");
-        Console.WriteLine($"Stack contains \"Javascript\": {aStack.Contains(search)}");
+        Console.WriteLine($"Stack contains \"{search}\": {aStack.Contains(search)}");
 
         if (aStack.Contains(search))
         {

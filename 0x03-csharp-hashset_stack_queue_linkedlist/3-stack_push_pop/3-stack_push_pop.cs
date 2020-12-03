@@ -12,9 +12,8 @@ class MyStack
 
         if (aStack.Contains(search))
         {
-            while (aStack.Peek() != search)
+            while (aStack.Contains(search))
                 aStack.Pop();
-            aStack.Pop();
         }
 
         aStack.Push(newItem);

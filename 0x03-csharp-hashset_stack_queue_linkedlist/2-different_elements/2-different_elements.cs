@@ -17,13 +17,16 @@ class List
         foreach (var item in list2)
             hash2.Add(item);
 
-        hash1.IntersectWith(hash2);
+        hash1.SymmetricExceptWith(hash2);
 
         /* Convert it to an int collection */
         List<int> myList = new List<int>();
         foreach (var item in hash1)
             myList.Add(item);
-
+        
+        // They want it sorted so... sort.
+        myList.Sort();
+        
         return (myList);
     }
 }

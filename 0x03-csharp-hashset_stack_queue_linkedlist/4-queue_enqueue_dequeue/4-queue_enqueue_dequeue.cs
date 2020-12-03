@@ -6,8 +6,8 @@ class MyQueue
     public static Queue<string> Info(Queue<string> aQueue, string newItem, string search)
     {
         Console.WriteLine($"Number of items: {aQueue.Count}");
-        Console.WriteLine($"Top item: {aQueue.Peek()}");
-        Console.WriteLine($"Stack contains \"{search}\": {aQueue.Contains(search)}");
+        Console.WriteLine($"First item: {aQueue.Peek()}");
+        Console.WriteLine($"Queue contains \"{search}\": {aQueue.Contains(search)}");
 
         aQueue.Enqueue(newItem);
 

@@ -8,7 +8,7 @@ class LList
         int index = 0;
         LinkedListNode<int> node = myLList.First;
 
-        while (node.Next != null)
+        while (node != null)
         {
             if (index == n) {
                 return node.Value;

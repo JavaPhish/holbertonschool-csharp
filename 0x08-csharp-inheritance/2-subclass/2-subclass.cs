@@ -6,6 +6,7 @@ using System.Collections.Generic;
 /// </summary>
 class Obj
 {
+
     /// <summary>
     /// Checks if an object is a sublass of basetype
     /// </summary>
@@ -14,10 +15,10 @@ class Obj
     /// </returns>
     public static bool IsOnlyASubclass(Type derivedType, Type baseType)
     {
-        if (baseType.IsSubclassOf(derivedType))
+        if (derivedType.IsSubclassOf(baseType))
         {
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 }

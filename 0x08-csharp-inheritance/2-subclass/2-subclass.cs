@@ -16,8 +16,8 @@ class Obj
     {
         if (baseType.IsSubclassOf(derivedType))
         {
-            return true;
+            return false;
         }
-        return false;
+        return true;
     }
 }

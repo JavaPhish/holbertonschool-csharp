@@ -8,9 +8,6 @@ class VectorMath
     /// <summary>
     /// DotProduct of two vectors
     /// </summary>
-    /// <returns>
-    /// the DotProduct
-    /// </returns>
     public static double DotProduct(double[] vector1, double[] vector2)
     {
         if (vector1.Length == vector2.Length)
@@ -24,9 +21,9 @@ class VectorMath
                     sum += vector1[i] * vector2[i];
                 }
 
-                return sum;
+                return (sum);
             }
         }
-        return -1;
+        return (-1);
     }
 }

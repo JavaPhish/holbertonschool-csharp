@@ -41,21 +41,21 @@ public class Queue<T>
         if (head == null)
         {
             head = new Node(n);
-            count++;
-            return head;
+        }
+        else
+        {
+            Node new_node = new Node(n);
+            new_node.next = head;
+
+            head = new_node;
         }
 
-        Node new_node = new Node(n);
-        new_node.next = head;
-
-        head = new_node;
-
-        count++;
-
+        count = 1;
         tail = head;
         while (tail.next != null)
         {
             tail = tail.next;
+            count++;
         }
 
         return head;

@@ -22,7 +22,7 @@ public class Queue<T>
     public class Node
     {
         T value = default(T);
-        Node next = null;
+        public Node next = null;
 
         /// <summary>
         /// Constructor
@@ -45,9 +45,18 @@ public class Queue<T>
             return head;
         }
 
-        tail = head;
-        head = new Node(n);
+        Node new_node = new Node(n);
+        new_node.next = head;
+
+        head = new_node;
+
         count++;
+
+        tail = head;
+        while (tail.next != null)
+        {
+            tail = tail.next;
+        }
 
         return head;
     }

@@ -48,7 +48,7 @@ public class Queue<T>
         T v = head.value;
         Node old = head;
         head = head.next;
-        
+        count--;
         return v;
     }
 
@@ -57,6 +57,7 @@ public class Queue<T>
     /// </summary>
     public Node Enqueue(T n)
     {
+        
         if (head == null)
         {
             head = new Node(n);
@@ -66,17 +67,10 @@ public class Queue<T>
             Node new_node = new Node(n);
             new_node.next = head;
 
-            head = new_node;
+            tail = new_node;
         }
 
-        count = 1;
-        tail = head;
-        while (tail.next != null)
-        {
-            tail = tail.next;
-            count++;
-        }
-
+        count++;
         return head;
     }
 
@@ -85,16 +79,6 @@ public class Queue<T>
     /// </summary>
     public int Count()
     {
-        int counter = 0;
-        Node temp = head;
-        while (temp != null)
-        {
-            counter++;
-            temp = temp.next;
-        }
-
-        count = counter;
-
-        return counter;
-    }
+        return count;
+    }  
 }

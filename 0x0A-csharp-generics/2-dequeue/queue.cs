@@ -41,14 +41,14 @@ public class Queue<T>
         if (head == null)
         {
             Console.WriteLine("Queue is empty");
+            count = 0;
             return default(T);
         }
 
         T v = head.value;
         Node old = head;
         head = head.next;
-        old.next = null;
-
+        
         return v;
     }
 
@@ -80,13 +80,21 @@ public class Queue<T>
         return head;
     }
 
-
-
     /// <summary>
     /// Returns the node count
     /// </summary>
     public int Count()
     {
-        return count;
+        int counter = 0;
+        Node temp = head;
+        while (temp != null)
+        {
+            counter++;
+            temp = temp.next;
+        }
+
+        count = counter;
+
+        return counter;
     }
 }

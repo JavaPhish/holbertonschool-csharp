@@ -55,9 +55,8 @@ public class Queue<T>
     /// <summary>
     /// Adds a new node
     /// </summary>
-    public Node Enqueue(T n)
+    public void Enqueue(T n)
     {
-        
         if (head == null)
         {
             head = new Node(n);
@@ -69,9 +68,7 @@ public class Queue<T>
 
             tail = new_node;
         }
-
         count++;
-        return head;
     }
 
     /// <summary>

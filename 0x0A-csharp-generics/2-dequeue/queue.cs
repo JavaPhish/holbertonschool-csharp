@@ -53,6 +53,20 @@ public class Queue<T>
     }
 
     /// <summary>
+    /// Returns value of first node
+    /// </summary>
+    public T Peek()
+    {
+        if (head == null)
+        {
+            Console.WriteLine("Queue is empty");
+            return default(T);
+        }
+
+        return head.value;
+    }
+
+    /// <summary>
     /// Adds a new node
     /// </summary>
     public void Enqueue(T n)
@@ -60,6 +74,7 @@ public class Queue<T>
         if (head == null)
         {
             head = new Node(n);
+            tail = head;
         }
         else
         {

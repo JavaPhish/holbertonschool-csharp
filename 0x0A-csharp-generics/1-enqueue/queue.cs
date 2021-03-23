@@ -50,14 +50,13 @@ public class Queue<T>
             head = new_node;
         }
 
-        count = 1;
         tail = head;
         while (tail.next != null)
         {
             tail = tail.next;
-            count++;
         }
 
+        count = this.Count();
         return head;
     }
 
@@ -66,6 +65,16 @@ public class Queue<T>
     /// </summary>
     public int Count()
     {
-        return count;
-    }
+        int counter = 0;
+        Node temp = head;
+        while (temp != null)
+        {
+            counter++;
+            temp = temp.next;
+        }
+
+        count = counter;
+
+        return counter;
+    }   
 }

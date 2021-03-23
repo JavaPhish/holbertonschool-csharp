@@ -10,7 +10,7 @@ public class Queue<T>
     int count = 0;
 
     /// <summary>
-    /// Returns this queues type
+    /// Returns the type of the current queue
     /// </summary>
     public Type CheckType() {
         return (typeof(T));
@@ -22,6 +22,7 @@ public class Queue<T>
     public class Node
     {
         T value = default(T);
+        /// Next node in queue
         public Node next = null;
 
         /// <summary>

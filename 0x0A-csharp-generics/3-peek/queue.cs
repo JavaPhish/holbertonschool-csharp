@@ -21,7 +21,9 @@ public class Queue<T>
     /// </summary>
     public class Node
     {
+        /// Value of node
         public T value = default(T);
+        /// The next node in queue
         public Node next = null;
 
         /// <summary>

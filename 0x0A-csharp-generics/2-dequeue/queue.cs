@@ -71,16 +71,16 @@ public class Queue<T>
     /// </summary>
     public void Enqueue(T n)
     {
+         Node new_node = new Node(n);
+
         if (head == null)
         {
-            head = new Node(n);
-            tail = head;
+            head = new_node;
+            tail = new_node;
         }
         else
         {
-            Node new_node = new Node(n);
-            new_node.next = head;
-
+            tail.next = new_node;
             tail = new_node;
         }
         count++;

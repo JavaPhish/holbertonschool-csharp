@@ -56,11 +56,12 @@ interface ICollectable
 public class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
     /// Test var
+    public void Interact() {}
+    /// Test var
     public void Break() {}
     /// Test var
     public void Collect() {}
-    /// Test var
-    public void Interact() {}
+
     
     /// Test func
     public int durability

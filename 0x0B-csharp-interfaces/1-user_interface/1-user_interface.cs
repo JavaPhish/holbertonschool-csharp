@@ -4,7 +4,11 @@
 public abstract class Base
 {
     /// The name
-    public string name;
+    string name
+    {
+        set;
+        get;
+    }
 
     /// ToString override
     public override string ToString()

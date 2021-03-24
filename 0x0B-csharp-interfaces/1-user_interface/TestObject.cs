@@ -4,7 +4,7 @@ using System.Reflection;
 
 
 /// implements things
-class TestObject : Base, IInteractive, IBreakable, ICollectable
+public class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
     /// Test var
     public void Break() {}

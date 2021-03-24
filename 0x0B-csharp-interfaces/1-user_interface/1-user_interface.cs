@@ -75,4 +75,11 @@ public class TestObject : Base, IInteractive, IBreakable, ICollectable
         get;
         set;
     }
+
+    /// test name
+    public string name
+    {
+        get;
+        set;
+    }
 }

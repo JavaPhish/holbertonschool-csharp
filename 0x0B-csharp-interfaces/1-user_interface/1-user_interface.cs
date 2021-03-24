@@ -43,14 +43,14 @@ public class TestObject : Base, IInteractive, IBreakable, ICollectable
 }
 
 /// Interactive
-public interface IInteractive
+interface IInteractive
 {
     /// Test func
     void Interact();
 }
 
 /// Ibreakble
-public interface IBreakable
+interface IBreakable
 {
     /// Test var
     int durability
@@ -64,7 +64,7 @@ public interface IBreakable
 }
 
 /// collectable
-public interface ICollectable
+interface ICollectable
 {
     /// Test var
     bool isCollected

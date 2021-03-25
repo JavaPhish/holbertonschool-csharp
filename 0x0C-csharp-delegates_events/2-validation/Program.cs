@@ -39,7 +39,7 @@ public class Player
         else
         {
             Console.WriteLine(this.name + " takes " + damage + " damage!");
-            this.hp -= damage;
+            ValidateHP(this.hp -= damage);
         }
     }
 
@@ -53,7 +53,7 @@ public class Player
         else
         {
             Console.WriteLine(this.name + " heals " + heal + " HP!");
-            this.hp += heal;
+            ValidateHP(this.hp += heal);
         }   
     }
 

@@ -4,9 +4,9 @@
 /// Player object
 public class Player
 {
-    string name;
-    float maxHp;
-    float hp;
+    private string name;
+    private float maxHp;
+    private float hp;
 
     /// Constructor
     public Player(string name = "Player", float maxHp = 100f)

@@ -95,7 +95,7 @@ public class Decoration : Base, IInteractive, IBreakable
             Console.WriteLine("The " + name + " has been broken.");
         else if (isQuestItem)
             Console.WriteLine("You look at the " + name + ". There's a key inside.");
-        else if (!isQuestItem)
+        else
             Console.WriteLine("You look at the " + name + ". Not much to see here.");
     }
 
@@ -108,7 +108,7 @@ public class Decoration : Base, IInteractive, IBreakable
             Console.WriteLine("You hit the " + name + ". It cracks.");
         else if (durability == 0)
             Console.WriteLine("You smash the " + name + ". What a mess.");
-        else if (durability > 0)
-            Console.WriteLine("The " + name + "is already broken.");
+        else
+            Console.WriteLine("The " + name + " is already broken.");
     }
 }

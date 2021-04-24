@@ -48,39 +48,6 @@ interface ICollectable
     void Collect();
 }
 
-/// implements things
-public class TestObject : Base, IInteractive, IBreakable, ICollectable
-{
-    /// Test var
-    public void Interact() {}
-    /// Test var
-    public void Break() {}
-    /// Test var
-    public void Collect() {}
-
-    
-    /// Test func
-    public int durability
-    {
-        get;
-        set;
-    }
-
-    /// Test func
-    public bool isCollected
-    {
-        get;
-        set;
-    }
-
-    /// test name
-    public string name
-    {
-        get;
-        set;
-    }
-}
-
 /// Door class
 public class Door : Base, IInteractive
 {
